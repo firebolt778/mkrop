@@ -1,6 +1,7 @@
 import AboutSection from "@/components/sections/about-section";
 import TechStackSection from "@/components/sections/tech-stack";
 import { Users, Award, Globe, Target } from "lucide-react";
+import { Link } from "wouter";
 
 const values = [
   {
@@ -131,12 +132,12 @@ export default function About() {
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Let's discuss how our expertise and values can drive your business forward.
           </p>
-          <a 
+          <Link
             href="/contact" 
             className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
           >
             Start a Conversation
-          </a>
+          </Link>
         </div>
       </section>
     </div>

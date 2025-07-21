@@ -3,6 +3,7 @@ import PortfolioCard from "@/components/ui/portfolio-card";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { PortfolioProject } from "@shared/schema";
 import { useState } from "react";
+import { Link } from "wouter";
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -94,12 +95,12 @@ export default function Portfolio() {
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Let's discuss how we can bring your vision to life with our expertise and dedication.
           </p>
-          <a 
+          <Link
             href="/contact" 
             className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
           >
             Get Started Today
-          </a>
+          </Link>
         </div>
       </section>
     </div>

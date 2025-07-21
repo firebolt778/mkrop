@@ -1,5 +1,5 @@
-import ServicesSection from "@/components/sections/services-section";
 import { Code, Users, TrendingUp, Bot, Globe, Smartphone, Shield, Cloud, TestTube, Heart, Cpu, Database } from "lucide-react";
+import { Link } from "wouter";
 
 const detailedServices = [
   {
@@ -130,12 +130,12 @@ export default function Services() {
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Contact us to discuss your project requirements and how we can help you achieve your goals.
           </p>
-          <a 
+          <Link
             href="/contact" 
             className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors inline-block"
           >
             Contact Us Today
-          </a>
+          </Link>
         </div>
       </section>
     </div>

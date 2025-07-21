@@ -73,18 +73,20 @@ export default function Footer() {
                   Blog
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Careers
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300 dark:text-gray-400">
-              <li>hello@mkrop.com</li>
+              <li>
+                <a href="mailto:hello@mkrop.com">hello@mkrop.com</a>
+              </li>
               <li>+1 (555) 123-4567</li>
               <li>
                 123 Tech Avenue<br />
