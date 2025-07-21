@@ -88,7 +88,7 @@ export default function Blog() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 bg-white dark:bg-gray-800">
+      {/* <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-secondary dark:text-white mb-6">Stay Updated</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
@@ -105,7 +105,7 @@ export default function Blog() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

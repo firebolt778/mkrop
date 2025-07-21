@@ -62,7 +62,7 @@ export default function Contact() {
       <ContactSection />
 
       {/* Map Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      {/* <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-secondary dark:text-white mb-4">Find Us</h2>
@@ -75,7 +75,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-white dark:bg-gray-800">

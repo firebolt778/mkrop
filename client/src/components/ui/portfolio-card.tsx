@@ -25,9 +25,9 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
             </span>
           ))}
         </div>
-        <a href="#" className="text-primary font-semibold hover:underline">
+        {/* <a href="#" className="text-primary font-semibold hover:underline">
           View Project →
-        </a>
+        </a> */}
       </div>
     </div>
   );

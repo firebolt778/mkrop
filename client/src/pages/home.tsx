@@ -22,11 +22,11 @@ function CertificationsSection() {
     <section className="py-12 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
-          <h3 className="text-lg font-semibold text-gray-600 dark:text-gray-300">Trusted by leading organizations worldwide</h3>
+          <h3 className="text-xl font-semibold text-gray-600 dark:text-gray-300">Trusted by leading organizations worldwide</h3>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-gray-100 dark:bg-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg">
+            <div key={index} className="bg-gray-100 dark:bg-gray-950 dark:text-gray-300 px-6 py-3 rounded-lg">
               {cert}
             </div>
           ))}

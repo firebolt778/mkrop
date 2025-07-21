@@ -21,9 +21,9 @@ export default function BlogCard({ post }: BlogCardProps) {
           <span className="text-sm text-gray-500 dark:text-gray-400">
             {format(new Date(post.publishedAt), "MMMM d, yyyy")}
           </span>
-          <a href="#" className="text-primary font-semibold hover:underline">
+          {/* <a href="#" className="text-primary font-semibold hover:underline">
             Read More →
-          </a>
+          </a> */}
         </div>
       </div>
     </article>

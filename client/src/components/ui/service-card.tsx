@@ -14,9 +14,9 @@ export default function ServiceCard({ icon: Icon, title, description }: ServiceC
       </div>
       <h3 className="text-xl font-bold text-secondary dark:text-white mb-4">{title}</h3>
       <p className="text-gray-600 dark:text-gray-300 mb-6">{description}</p>
-      <a href="#" className="text-primary font-semibold hover:underline">
+      {/* <a href="/services" className="text-primary font-semibold hover:underline">
         Learn More →
-      </a>
+      </a> */}
     </div>
   );
 }
