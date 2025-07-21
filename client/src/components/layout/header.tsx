@@ -28,8 +28,8 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">M</span>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+              <img src="/favicon.png" />
             </div>
             <span className="text-2xl font-bold text-secondary dark:text-white">MKrop.com</span>
           </Link>
