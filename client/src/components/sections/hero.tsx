@@ -7,12 +7,12 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-secondary leading-tight mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold text-secondary dark:text-white leading-tight mb-6">
               Software Development
               <span className="block">& IT Consulting</span>
               <span className="block text-primary">Company</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Empower your business with our seasoned engineers and deep tech expertise. 
               We deliver innovative solutions across Europe and America.
             </p>
@@ -40,10 +40,10 @@ export default function HeroSection() {
               alt="Software development team collaborating"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+            <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold text-gray-700">150+ Projects Delivered</span>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">150+ Projects Delivered</span>
               </div>
             </div>
           </div>

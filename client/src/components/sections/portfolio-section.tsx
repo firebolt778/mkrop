@@ -11,11 +11,11 @@ export default function PortfolioSection() {
   });
 
   return (
-    <section id="portfolio" className="py-20 bg-gray-50">
+    <section id="portfolio" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">Portfolio of IT Projects</h2>
-          <p className="text-xl text-gray-600">Showcasing our expertise across diverse industries and technologies</p>
+          <h2 className="text-4xl font-bold text-secondary dark:text-white mb-4">Portfolio of IT Projects</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300">Showcasing our expertise across diverse industries and technologies</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -23,7 +23,7 @@ export default function PortfolioSection() {
             ? Array(3)
                 .fill(0)
                 .map((_, i) => (
-                  <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                  <div key={i} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
                     <Skeleton className="w-full h-48" />
                     <div className="p-6 space-y-4">
                       <Skeleton className="h-6 w-3/4" />

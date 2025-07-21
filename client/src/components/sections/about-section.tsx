@@ -7,16 +7,16 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-secondary mb-6">About MKrop.com</h2>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <h2 className="text-4xl font-bold text-secondary dark:text-white mb-6">About MKrop.com</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
               With over a decade of experience in software development and IT consulting, 
               MKrop.com has been empowering businesses across Europe and America with innovative technology solutions.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Our team of seasoned engineers combines deep technical expertise with business acumen 
               to deliver solutions that drive real results for our clients.
             </p>
@@ -25,7 +25,7 @@ export default function AboutSection() {
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl font-bold text-primary mb-2">{stat.value}</div>
-                  <div className="text-gray-600">{stat.label}</div>
+                  <div className="text-gray-600 dark:text-gray-300">{stat.label}</div>
                 </div>
               ))}
             </div>

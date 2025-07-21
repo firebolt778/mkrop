@@ -57,19 +57,19 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-4xl font-bold text-secondary dark:text-white mb-4">Get In Touch</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             Ready to transform your business with innovative technology solutions?
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-secondary mb-6">Let's Discuss Your Project</h3>
-            <p className="text-lg text-gray-600 mb-8">
+            <h3 className="text-2xl font-bold text-secondary dark:text-white mb-6">Let's Discuss Your Project</h3>
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
               Whether you need custom software development, talent provision, or IT consulting, 
               our team is ready to help you achieve your goals.
             </p>
@@ -80,8 +80,8 @@ export default function ContactSection() {
                   <Mail className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-secondary">Email</div>
-                  <div className="text-gray-600">hello@mkrop.com</div>
+                  <div className="font-semibold text-secondary dark:text-white">Email</div>
+                  <div className="text-gray-600 dark:text-gray-300">hello@mkrop.com</div>
                 </div>
               </div>
 
@@ -90,8 +90,8 @@ export default function ContactSection() {
                   <Phone className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-secondary">Phone</div>
-                  <div className="text-gray-600">+1 (555) 123-4567</div>
+                  <div className="font-semibold text-secondary dark:text-white">Phone</div>
+                  <div className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</div>
                 </div>
               </div>
 
@@ -100,18 +100,18 @@ export default function ContactSection() {
                   <MapPin className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-secondary">Office</div>
-                  <div className="text-gray-600">123 Tech Avenue, San Francisco, CA</div>
+                  <div className="font-semibold text-secondary dark:text-white">Office</div>
+                  <div className="text-gray-600 dark:text-gray-300">123 Tech Avenue, San Francisco, CA</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-lg">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <Label htmlFor="name" className="text-sm font-semibold text-gray-700">
+                  <Label htmlFor="name" className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                     Your Name *
                   </Label>
                   <Input
@@ -125,7 +125,7 @@ export default function ContactSection() {
                   />
                 </div>
                 <div>
-                  <Label htmlFor="email" className="text-sm font-semibold text-gray-700">
+                  <Label htmlFor="email" className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                     Email Address *
                   </Label>
                   <Input
@@ -141,7 +141,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <Label htmlFor="company" className="text-sm font-semibold text-gray-700">
+                <Label htmlFor="company" className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                   Company
                 </Label>
                 <Input
@@ -155,7 +155,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <Label className="text-sm font-semibold text-gray-700">Service Needed</Label>
+                <Label className="text-sm font-semibold text-gray-700 dark:text-gray-300">Service Needed</Label>
                 <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
                   <SelectTrigger className="mt-2">
                     <SelectValue placeholder="Select a service" />
@@ -170,7 +170,7 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <Label htmlFor="message" className="text-sm font-semibold text-gray-700">
+                <Label htmlFor="message" className="text-sm font-semibold text-gray-700 dark:text-gray-300">
                   Project Details *
                 </Label>
                 <Textarea

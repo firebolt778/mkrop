@@ -38,11 +38,11 @@ const techStack = [
 
 export default function TechStackSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">We Cover Your Stack</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-secondary dark:text-white mb-4">We Cover Your Stack</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             We're well-versed in most programming languages, tools, and frameworks essential for innovative solutions
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function TechStackSection() {
                 className="flex flex-col items-center space-y-2 tech-icon cursor-pointer"
               >
                 <Icon className={`text-4xl ${tech.color}`} />
-                <span className="text-sm font-medium text-gray-700">{tech.name}</span>
+                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{tech.name}</span>
               </div>
             );
           })}

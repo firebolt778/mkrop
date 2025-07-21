@@ -13,11 +13,11 @@ export default function BlogSection() {
   const displayPosts = posts?.slice(0, 3);
 
   return (
-    <section id="blog" className="py-20 bg-white">
+    <section id="blog" className="py-20 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-secondary mb-4">Latest Insights</h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-4xl font-bold text-secondary dark:text-white mb-4">Latest Insights</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             Stay updated with the latest trends in software development and IT consulting
           </p>
         </div>

@@ -3,7 +3,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-white py-16">
+    <footer className="bg-secondary dark:bg-gray-950 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -13,17 +13,17 @@ export default function Footer() {
               </div>
               <span className="text-2xl font-bold">MKrop.com</span>
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 dark:text-gray-400 mb-4">
               Empowering businesses with innovative software solutions and expert IT consulting services.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors">
                 <Github className="h-5 w-5" />
               </a>
             </div>
@@ -31,7 +31,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-gray-300 dark:text-gray-400">
               <li>
                 <Link href="/services" className="hover:text-white transition-colors">
                   Software Development
@@ -57,7 +57,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-gray-300 dark:text-gray-400">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
                   About Us
@@ -83,7 +83,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-gray-300 dark:text-gray-400">
               <li>hello@mkrop.com</li>
               <li>+1 (555) 123-4567</li>
               <li>
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+        <div className="border-t border-gray-700 dark:border-gray-800 mt-12 pt-8 text-center text-gray-300 dark:text-gray-400">
           <p>&copy; 2024 MKrop.com. All rights reserved.</p>
         </div>
       </div>
