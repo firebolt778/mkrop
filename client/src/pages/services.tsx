@@ -80,10 +80,10 @@ export default function Services() {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="py-20 hero-gradient">
+      <section className="py-20 hero-gradient dark:bg-gray-900">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold text-secondary mb-6">Our Services</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold text-secondary dark:text-white mb-6">Our Services</h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Comprehensive software development services designed to empower businesses across industries. 
             Whether you need to fill skill gaps, meet deadlines, or scale operations, we offer tailored solutions 
             to transform your digital capabilities and achieve your business goals.
@@ -92,23 +92,23 @@ export default function Services() {
       </section>
 
       {/* Detailed Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-8">
             {detailedServices.map((service, index) => {
               const Icon = service.icon;
               return (
-                <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div key={index} className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                   <div className="flex items-start space-x-4">
                     <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
                       <Icon className="h-8 w-8 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-secondary mb-3">{service.title}</h3>
-                      <p className="text-gray-600 mb-4">{service.description}</p>
+                      <h3 className="text-xl font-bold text-secondary dark:text-white mb-3">{service.title}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4">{service.description}</p>
                       <ul className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center text-sm text-gray-700">
+                          <li key={featureIndex} className="flex items-center text-sm text-gray-700 dark:text-gray-300">
                             <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                             {feature}
                           </li>
@@ -124,10 +124,10 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-secondary mb-6">Ready to Get Started?</h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <h2 className="text-3xl font-bold text-secondary dark:text-white mb-6">Ready to Get Started?</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
             Contact us to discuss your project requirements and how we can help you achieve your goals.
           </p>
           <a 

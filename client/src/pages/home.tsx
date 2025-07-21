@@ -19,14 +19,14 @@ function CertificationsSection() {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
-          <h3 className="text-lg font-semibold text-gray-600">Trusted by leading organizations worldwide</h3>
+          <h3 className="text-lg font-semibold text-gray-600 dark:text-gray-300">Trusted by leading organizations worldwide</h3>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-gray-100 px-6 py-3 rounded-lg">
+            <div key={index} className="bg-gray-100 dark:bg-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg">
               {cert}
             </div>
           ))}
@@ -39,13 +39,13 @@ function CertificationsSection() {
 // Quote/Vision Section
 function VisionSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <Quote className="h-12 w-12 text-primary mx-auto mb-6" />
           </div>
-          <blockquote className="text-2xl lg:text-3xl font-bold text-secondary mb-8 leading-relaxed">
+          <blockquote className="text-2xl lg:text-3xl font-bold text-secondary dark:text-white mb-8 leading-relaxed">
             "Our vision is to redefine software development worldwide and inspire teams to deliver top results with in-house-like dedication."
           </blockquote>
           
@@ -56,8 +56,8 @@ function VisionSection() {
               className="w-16 h-16 rounded-full object-cover"
             />
             <div className="text-left">
-              <div className="font-bold text-secondary">Michael Krop</div>
-              <div className="text-gray-600">Chief Executive Officer</div>
+              <div className="font-bold text-secondary dark:text-white">Michael Krop</div>
+              <div className="text-gray-600 dark:text-gray-300">Chief Executive Officer</div>
             </div>
           </div>
         </div>
