@@ -75,7 +75,7 @@ export default function ContactSection() {
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
                   <Mail className="h-5 w-5 text-white" />
                 </div>
@@ -83,7 +83,7 @@ export default function ContactSection() {
                   <div className="font-semibold text-secondary dark:text-white">Email</div>
                   <div className="text-gray-600 dark:text-gray-300">hello@mkrop.com</div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
@@ -91,7 +91,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-secondary dark:text-white">Phone</div>
-                  <div className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</div>
+                  <div className="text-gray-600 dark:text-gray-300">+380 96 938 09 49</div>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold text-secondary dark:text-white">Office</div>
-                  <div className="text-gray-600 dark:text-gray-300">123 Tech Avenue, San Francisco, CA</div>
+                  <div className="text-gray-600 dark:text-gray-300">Spusknyi lane 24, Kropyvnytskyi, Kirovohrad Oblast</div>
                 </div>
               </div>
             </div>

@@ -32,7 +32,7 @@ export default function Portfolio() {
       </section>
 
       {/* Filter Section */}
-      <section className="py-8 bg-white dark:bg-gray-800 border-b dark:border-gray-700">
+      {/* <section className="py-8 bg-white dark:bg-gray-800 border-b dark:border-gray-700">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
@@ -50,7 +50,7 @@ export default function Portfolio() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Grid */}
       <section className="py-20 bg-gray-50 dark:bg-gray-900">

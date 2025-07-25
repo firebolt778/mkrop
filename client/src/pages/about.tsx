@@ -28,28 +28,22 @@ const values = [
 
 const team = [
   {
-    name: "Michael Krop",
+    name: "Oleh Panchenko",
     role: "Chief Executive Officer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-    description: "With over 15 years of experience in software development and business strategy, Michael leads our vision of redefining software development worldwide."
+    image: "/src/assets/ceo.png",
+    description: "With over 15 years of experience in software development and business strategy, Serhii leads our vision of redefining software development worldwide."
   },
   {
-    name: "Sarah Johnson", 
+    name: "Serhii Panchenko", 
     role: "Chief Technology Officer",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b077?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-    description: "Sarah brings deep technical expertise in cloud architecture and AI, driving our technology innovation and ensuring we stay ahead of industry trends."
+    image: "/src/assets/cto.png",
+    description: "Serhii brings deep technical expertise in cloud architecture and AI, driving our technology innovation and ensuring we stay ahead of industry trends."
   },
   {
-    name: "David Chen",
-    role: "VP of Engineering",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300", 
-    description: "David oversees our engineering teams and ensures the highest quality standards in all our development projects and client deliverables."
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Head of Business Development",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
-    description: "Emily leads our client relationships and business growth initiatives, ensuring we understand and exceed our clients' expectations."
+    name: "(Add Name)",
+    role: "Chief Operating Officer",
+    image: "/src/assets/coo.png",
+    description: "As Chief Operating Officer, our COO drives operational excellence and ensures seamless execution across all departments."
   }
 ];
 
@@ -68,7 +62,7 @@ export default function About() {
       </section>
 
       {/* About Section */}
-      <AboutSection />
+      {/* <AboutSection /> */}
 
       {/* Values Section */}
       <section className="py-20 bg-white dark:bg-gray-800">
@@ -105,7 +99,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg text-center">
                 <img

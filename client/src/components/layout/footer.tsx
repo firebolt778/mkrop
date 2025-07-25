@@ -3,13 +3,13 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary dark:bg-gray-950 text-white py-16">
+    <footer className="bg-secondary dark:bg-gray-950 text-white pt-16 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                <img src="/favicon.png" />
               </div>
               <span className="text-2xl font-bold">MKrop.com</span>
             </div>
@@ -68,11 +68,11 @@ export default function Footer() {
                   Portfolio
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog" className="hover:text-white transition-colors">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               {/* <li>
                 <a href="#" className="hover:text-white transition-colors">
                   Careers
@@ -84,13 +84,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300 dark:text-gray-400">
-              <li>
+              {/* <li>
                 <a href="mailto:hello@mkrop.com">hello@mkrop.com</a>
-              </li>
-              <li>+1 (555) 123-4567</li>
+              </li> */}
+              <li>+380 96 938 09 49</li>
               <li>
-                123 Tech Avenue<br />
-                San Francisco, CA
+                Spusknyi lane 24<br />
+                Kropyvnytskyi, Kirovohrad Oblast, UA, 25006
               </li>
             </ul>
           </div>

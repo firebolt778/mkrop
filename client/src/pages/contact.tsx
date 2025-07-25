@@ -18,23 +18,22 @@ export default function Contact() {
       {/* Contact Info Section */}
       <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="text-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {/* <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-secondary dark:text-white mb-2">Email Us</h3>
               <p className="text-gray-600 dark:text-gray-300">hello@mkrop.com</p>
               <p className="text-gray-600 dark:text-gray-300">support@mkrop.com</p>
-            </div>
+            </div> */}
 
             <div className="text-center">
               <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-secondary dark:text-white mb-2">Call Us</h3>
-              <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
-              <p className="text-gray-600 dark:text-gray-300">+1 (555) 987-6543</p>
+              <p className="text-gray-600 dark:text-gray-300">+380 96 938 09 49</p>
             </div>
 
             <div className="text-center">
@@ -42,8 +41,8 @@ export default function Contact() {
                 <MapPin className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-secondary dark:text-white mb-2">Visit Us</h3>
-              <p className="text-gray-600 dark:text-gray-300">123 Tech Avenue</p>
-              <p className="text-gray-600 dark:text-gray-300">San Francisco, CA 94105</p>
+              <p className="text-gray-600 dark:text-gray-300">Spusknyi lane 24</p>
+              <p className="text-gray-600 dark:text-gray-300">Kropyvnytskyi, Kirovohrad Oblast, UA, 25006</p>
             </div>
 
             <div className="text-center">

@@ -26,7 +26,7 @@ function CertificationsSection() {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
           {certifications.map((cert, index) => (
-            <div key={index} className="bg-gray-100 dark:bg-gray-950 dark:text-gray-300 px-6 py-3 rounded-lg">
+            <div key={index} className="bg-gray-100 dark:bg-gray-950 dark:text-white px-6 py-3 rounded-lg">
               {cert}
             </div>
           ))}
@@ -51,13 +51,13 @@ function VisionSection() {
           
           <div className="flex items-center justify-center space-x-6">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+              src="/src/assets/ceo.png"
               alt="CEO headshot"
               className="w-16 h-16 rounded-full object-cover"
             />
             <div className="text-left">
-              <div className="font-bold text-secondary dark:text-white">Michael Krop</div>
-              <div className="text-gray-600 dark:text-gray-300">Chief Executive Officer</div>
+              <div className="font-bold text-secondary dark:text-white">Oleh Panchenko</div>
+              <div className="text-gray-600 dark:text-gray-300">Co-founder & CEO</div>
             </div>
           </div>
         </div>
@@ -75,8 +75,8 @@ export default function Home() {
       <VisionSection />
       <PortfolioSection />
       <TechStackSection />
-      <AboutSection />
-      <BlogSection />
+      {/* <AboutSection /> */}
+      {/* <BlogSection /> */}
       <ContactSection />
     </div>
   );
