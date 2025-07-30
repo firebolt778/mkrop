@@ -9,6 +9,12 @@ const detailedServices = [
     features: ["Legacy System Modernization", "Enterprise Applications", "Microservices Architecture", "API Development"]
   },
   {
+    icon: Users,
+    title: "Talent Provision",
+    description: "Access top-tier developers and IT professionals to scale your team quickly and efficiently.",
+    features: ["Staff Augmentation", "Dedicated Teams", "Technical Recruiting", "Remote Development Teams"]
+  },
+  {
     icon: Bot,
     title: "AI Software Development", 
     description: "Make the most of the latest AI tech in computer vision, natural language processing, intelligent automation, and more with MKrop.",
@@ -62,12 +68,7 @@ const detailedServices = [
     description: "From smart device firmware and edge computing to cloud integration, we build robust scalable secure, high-performance IoT solutions for industries.",
     features: ["Embedded Systems", "Edge Computing", "IoT Platforms", "Sensor Networks"]
   },
-  {
-    icon: Users,
-    title: "Talent Provision",
-    description: "Access top-tier developers and IT professionals to scale your team quickly and efficiently.",
-    features: ["Staff Augmentation", "Dedicated Teams", "Technical Recruiting", "Remote Development Teams"]
-  },
+  
   {
     icon: TrendingUp,
     title: "IT Consulting",

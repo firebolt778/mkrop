@@ -31,16 +31,16 @@ const team = [
     name: "Oleh Panchenko",
     role: "Chief Executive Officer",
     image: "/src/assets/ceo.png",
-    description: "With over 15 years of experience in software development and business strategy, Serhii leads our vision of redefining software development worldwide."
+    description: "With over 10 years of experience in software development and business strategy, Oleh leads our vision of redefining software development worldwide."
   },
   {
     name: "Serhii Panchenko", 
     role: "Chief Technology Officer",
     image: "/src/assets/cto.png",
-    description: "Serhii brings deep technical expertise in cloud architecture and AI, driving our technology innovation and ensuring we stay ahead of industry trends."
+    description: "Serhii brings deep technical expertise in AI, Web, Mobile, IoT and Cloud Engineering, driving our technology innovation and ensuring we stay ahead of industry trends."
   },
   {
-    name: "(Add Name)",
+    name: "Mykhailo Lobov",
     role: "Chief Operating Officer",
     image: "/src/assets/coo.png",
     description: "As Chief Operating Officer, our COO drives operational excellence and ensures seamless execution across all departments."
