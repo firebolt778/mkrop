@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,15 +17,24 @@ export default function Footer() {
               Empowering businesses with innovative software solutions and expert IT consulting services.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors">
+              <a
+                href="https://www.linkedin.com/company/mkrop/about/"
+                className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors">
+              <a
+                href="https://x.com/MKropCom/"
+                className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors">
-                <Github className="h-5 w-5" />
-              </a>
+              {/* <a
+                href="#"
+                className="text-gray-300 dark:text-gray-400 hover:text-white transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </a> */}
             </div>
           </div>
 

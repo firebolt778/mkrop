@@ -9,13 +9,14 @@ import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import type { InsertContactSubmission } from "@shared/schema";
+import { detailedServices } from "@/pages/services";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    service: "",
+    service: "Other",
     message: "",
   });
 
@@ -34,7 +35,7 @@ export default function ContactSection() {
         name: "",
         email: "",
         company: "",
-        service: "",
+        service: "Other",
         message: "",
       });
     },
@@ -134,7 +135,7 @@ export default function ContactSection() {
                     required
                     value={formData.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
-                    placeholder="john@company.com"
+                    placeholder="john@example.com"
                     className="mt-2"
                   />
                 </div>
@@ -161,10 +162,10 @@ export default function ContactSection() {
                     <SelectValue placeholder="Select a service" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="software-development">Custom Software Development</SelectItem>
-                    <SelectItem value="talent-provision">Talent Provision</SelectItem>
-                    <SelectItem value="it-consulting">IT Consulting</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
+                    {detailedServices.map((service, index) => (
+                      <SelectItem key={index} value={service.title}>{service.title}</SelectItem>
+                    ))}
+                    <SelectItem value="Other">Other</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

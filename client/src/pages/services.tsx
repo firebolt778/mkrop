@@ -1,7 +1,7 @@
 import { Code, Users, TrendingUp, Bot, Globe, Smartphone, Shield, Cloud, TestTube, Heart, Cpu, Database } from "lucide-react";
 import { Link } from "wouter";
 
-const detailedServices = [
+export const detailedServices = [
   {
     icon: Code,
     title: "Custom Software Development",
@@ -68,7 +68,6 @@ const detailedServices = [
     description: "From smart device firmware and edge computing to cloud integration, we build robust scalable secure, high-performance IoT solutions for industries.",
     features: ["Embedded Systems", "Edge Computing", "IoT Platforms", "Sensor Networks"]
   },
-  
   {
     icon: TrendingUp,
     title: "IT Consulting",

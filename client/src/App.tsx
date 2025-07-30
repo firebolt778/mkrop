@@ -19,6 +19,14 @@ function Router() {
   const [location] = useLocation();
 
   useEffect(() => {
+    if (location.startsWith("/contact")) {
+      // Scroll to #contact when on contact page
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+    }
     window.scrollTo(0, 0);
   }, [location]);
 

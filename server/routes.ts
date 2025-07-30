@@ -3,6 +3,19 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertBlogPostSchema, insertPortfolioProjectSchema, insertContactSubmissionSchema } from "@shared/schema";
 
+const contactTgTemplate = `📩 *New Contact Form Submission*
+
+*Name:* {{NAME}}
+*Email:* {{EMAIL}}
+*Company:* {{COMPANY}}
+*Service:* {{SERVICE}}
+🕒 *Submitted At:* {{DATE}}
+*Message:*
+\`\`\`
+{{MESSAGE}}
+\`\`\`
+`;
+
 export async function registerRoutes(app: Express): Promise<Server> {
   // Blog posts routes
   app.get("/api/blog-posts", async (req, res) => {
@@ -91,14 +104,42 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form route
   app.post("/api/contact", async (req, res) => {
     try {
+      const TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+      const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+      if (!TELEGRAM_TOKEN || !TELEGRAM_CHAT_ID) {
+        return res.status(500).json({ message: "Telegram bot configuration is missing" });
+      }
       const validatedData = insertContactSubmissionSchema.parse(req.body);
       const submission = await storage.createContactSubmission(validatedData);
-      
-      // In a real application, you would send an email here
-      // For now, we'll just log the submission
-      console.log("Contact form submission:", submission);
-      
-      res.status(201).json({ message: "Contact form submitted successfully" });
+      let message = contactTgTemplate;
+      message = message
+        .replace("{{NAME}}", submission.name)
+        .replace("{{EMAIL}}", submission.email)
+        .replace("{{COMPANY}}", submission.company || "N/A")
+        .replace("{{SERVICE}}", submission.service || "Other")
+        .replace("{{MESSAGE}}", submission.message)
+        .replace(
+          "{{DATE}}",
+          new Date(submission.submittedAt).toLocaleString(
+            'en-US', { timeZone: 'Europe/Kyiv' }
+          )
+        );
+      const formData = new URLSearchParams();
+      formData.append("chat_id", TELEGRAM_CHAT_ID);
+      formData.append("parse_mode", "Markdown");
+      formData.append("text", message);
+      const response = await fetch(
+        `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+      if (!response.ok) {
+        console.error("Failed to send message to Telegram:", await response.text());
+        return res.status(500).json({ message: "Failed to send contact form submission" });
+      }
+      res.status(200).json({ message: "Contact form submitted successfully" });
     } catch (error) {
       console.error("Contact form submission error:", error);
       res.status(400).json({ message: "Invalid contact form data" });

@@ -1,7 +1,7 @@
 import ServiceCard from "@/components/ui/service-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Code, Users, TrendingUp, Bot, Globe, Smartphone } from "lucide-react";
+import { Code, Users, Cpu, Bot, Globe, Smartphone } from "lucide-react";
 
 const services = [
   {
@@ -13,11 +13,6 @@ const services = [
     icon: Users,
     title: "Talent Provision",
     description: "Access top-tier developers and IT professionals to scale your team quickly and efficiently.",
-  },
-  {
-    icon: TrendingUp,
-    title: "IT Consulting",
-    description: "Strategic guidance to optimize your technology infrastructure and drive digital transformation.",
   },
   {
     icon: Bot,
@@ -33,6 +28,12 @@ const services = [
     icon: Smartphone,
     title: "Mobile App Development",
     description: "Native and cross-platform mobile applications that deliver exceptional user experiences.",
+  },
+  {
+    icon: Cpu,
+    title: "IoT Development Services",
+    description: "From smart device firmware and edge computing to cloud integration, we build robust scalable secure, high-performance IoT solutions for industries.",
+    features: ["Embedded Systems", "Edge Computing", "IoT Platforms", "Sensor Networks"]
   },
 ];
 
