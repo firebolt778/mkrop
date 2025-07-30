@@ -1,10 +1,8 @@
+import { FaMicrochip } from "react-icons/fa6";
+import { MdSecurity } from "react-icons/md";
 import { 
-  SiReact, 
-  SiNodedotjs, 
-  SiPython, 
-  SiJavascript,
-  SiTypescript,
-  SiAmazon,
+  SiReact,
+  SiPython,
   SiDocker,
   SiAngular,
   SiVuedotjs,
@@ -13,27 +11,82 @@ import {
   SiKubernetes,
   SiPostgresql,
   SiMongodb,
-  SiRedis,
-  SiTerraform
+  SiTerraform,
+  SiTensorflow,
+  SiPytorch,
+  SiScikitlearn,
+  SiOpencv,
+  SiNextdotjs,
+  SiGatsby,
+  SiGrafana,
+  SiSwift,
+  SiKotlin,
+  SiAmazonwebservices,
+  SiGooglecloud,
+  SiMetasploit,
+  SiSelenium,
+  SiJest,
+  SiRaspberrypi,
+  SiUml
 } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 const techStack = [
+  // Custom Software Development
   { icon: SiReact, name: "React", color: "text-blue-500" },
-  { icon: SiNodedotjs, name: "Node.js", color: "text-green-500" },
-  { icon: SiPython, name: "Python", color: "text-yellow-500" },
-  { icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
-  { icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
-  { icon: SiAmazon, name: "AWS", color: "text-orange-500" },
-  { icon: SiDocker, name: "Docker", color: "text-blue-600" },
   { icon: SiAngular, name: "Angular", color: "text-red-600" },
-  { icon: SiVuedotjs, name: "Vue.js", color: "text-green-600" },
+  { icon: SiPython, name: "Python", color: "text-yellow-300" },
+  { icon: SiDotnet, name: "Dotnet", color: "text-purple-600" },
+
+  // AI Software Development
+  { icon: SiTensorflow, name: "TensorFlow", color: "text-blue-600" },
+  { icon: SiPytorch, name: "PyTorch", color: "text-orange-500" },
+  { icon: SiScikitlearn, name: "Scikit‑learn", color: "text-blue-400" },
+  { icon: SiOpencv, name: "OpenCV", color: "text-blue-900" },
+
+  // Web Development
+  { icon: SiNextdotjs, name: "Next.js", color: "text-black" },
+  { icon: SiVuedotjs, name: "Vue.js", color: "text-green-500" },
+  { icon: SiGatsby, name: "Gatsby", color: "text-purple-600" },
+
+  // Data Management and Analysis
+  { icon: SiPostgresql, name: "PostgreSQL", color: "text-blue-800" },
+  { icon: SiMongodb, name: "MongoDB", color: "text-green-500" },
+  { icon: SiGrafana, name: "Grafana", color: "text-orange-400" },
+
+  // Mobile App Development
+  { icon: SiReact, name: "React Native", color: "text-blue-500" },
   { icon: SiFlutter, name: "Flutter", color: "text-blue-400" },
-  { icon: SiDotnet, name: ".NET", color: "text-purple-600" },
-  { icon: SiKubernetes, name: "Kubernetes", color: "text-blue-500" },
-  { icon: SiPostgresql, name: "PostgreSQL", color: "text-blue-700" },
-  { icon: SiMongodb, name: "MongoDB", color: "text-green-600" },
-  { icon: SiRedis, name: "Redis", color: "text-red-500" },
-  { icon: SiTerraform, name: "Terraform", color: "text-purple-500" },
+  { icon: SiSwift, name: "Swift", color: "text-orange-400" },
+  { icon: SiKotlin, name: "Kotlin", color: "text-purple-700" },
+
+  // DevOps and Cloud Solutions
+  { icon: SiAmazonwebservices, name: "AWS", color: "text-orange-600" },
+  { icon: VscAzure, name: "Azure", color: "text-blue-700" },
+  { icon: SiGooglecloud, name: "Google Cloud", color: "text-blue-400" },
+  { icon: SiDocker, name: "Docker", color: "text-blue-500" },
+  { icon: SiKubernetes, name: "Kubernetes", color: "text-blue-700" },
+  { icon: SiTerraform, name: "Terraform", color: "text-green-400" },
+
+  // Cybersecurity Services
+  { icon: SiMetasploit, name: "Metasploit", color: "text-red-700" },
+  { icon: MdSecurity, name: "Nmap", color: "text-blue-700" },
+
+  // Software Testing Services
+  { icon: SiSelenium, name: "Selenium", color: "text-blue-700" },
+  { icon: SiJest, name: "Jest", color: "text-red-600" },
+
+  // Healthcare Software Development
+  { icon: SiPython, name: "Python", color: "text-yellow-300" },
+
+  // IoT Development Services
+  { icon: SiRaspberrypi, name: "Raspberry Pi", color: "text-green-700" },
+  { icon: FaMicrochip, name: "IoT", color: "text-blue-500" },
+
+  // IT Consulting
+  // Consulting is methodology‑driven, so less tool‑specific icons available in si
+  { icon: SiUml, name: "UML", color: "text-gray-600" }
+
 ];
 
 export default function TechStackSection() {

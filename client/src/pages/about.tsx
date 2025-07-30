@@ -53,7 +53,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="py-20 hero-gradient dark:bg-gray-900">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold text-secondary dark:text-white mb-6">About MKrop.com</h1>
+          <h1 className="text-5xl font-bold text-secondary dark:text-white mb-6">About MKrop</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             We are a team of passionate engineers and technology experts dedicated to transforming businesses 
             through innovative software solutions and strategic IT consulting.
