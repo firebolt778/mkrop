@@ -83,7 +83,7 @@ export class MemStorage implements IStorage {
       {
         title: "Microlearning Platform for Professional and Personal Education",
         description: "MKrop provided comprehensive mobile development and frontend engineering services, utilizing Flutter for cross-platform mobile app development and React for building responsive and dynamic frontend interfaces.",
-        imageUrl: "/src/assets/SmartEdu.jpg",
+        imageUrl: "/assets/SmartEdu.jpg",
         technologies: ["AWS", "Edtech", "Flutter", "Mobile development", "MongoDB", "Stripe", "TypeScript", "Node.js", "Web development"],
         category: "Web Development",
         featured: false,
@@ -91,7 +91,7 @@ export class MemStorage implements IStorage {
       {
         title: "Call Center Monitoring Software That Automates 27% of Client Requests",
         description: "MKrop partnered in designing a tailored AI-powered call center monitoring software for a major telecom enterprise, seamlessly linking operators and customers within an integrated platform.",
-        imageUrl: "/src/assets/CallCenterMonitoring.jpg",
+        imageUrl: "/assets/CallCenterMonitoring.jpg",
         technologies: [".NET", "AI", "Business process automation (BPA)", "Python", "React"],
         category: "Web Development",
         featured: false,
@@ -99,7 +99,7 @@ export class MemStorage implements IStorage {
       {
         title: "Mobile Data Security Software for Telecom Provider",
         description: "As a part of a global team, our talented engineers built iOS and Android mobile security apps for a prominent US telecom giant.",
-        imageUrl: "/src/assets/MobileSecurity.jpg",
+        imageUrl: "/assets/MobileSecurity.jpg",
         technologies: ["Cybersecurity", "DataProtection", "Java", "Swift", "Telecom"],
         category: "Mobile Development",
         featured: true,
@@ -107,7 +107,7 @@ export class MemStorage implements IStorage {
       {
         title: "IoT & ML-based Energy Management Solution",
         description: "Software for IoT energy management, specifically tailored to monitor wind turbines and manage energy production.",
-        imageUrl: "/src/assets/IoTEnergyManagement.jpg",
+        imageUrl: "/assets/IoTEnergyManagement.jpg",
         technologies: ["AI", "IoT", "DevOps", "ML", "Cloud", "Data analytics", "Energy", "Backend development"],
         category: "Data Analytics",
         featured: true,
@@ -115,7 +115,7 @@ export class MemStorage implements IStorage {
       {
         title: "Telehealth Solution: 7-8% Boost in Financial Results",
         description: "MKrop addressed the client’s need for telehealth app development and created native iOS and Android applications, integrating them into the SaaS healthcare environment.",
-        imageUrl: "/src/assets/MobileTelemedicine.jpg",
+        imageUrl: "/assets/MobileTelemedicine.jpg",
         technologies: ["AWS", "Healthcare", "Java", "Kotlin", "Swift", "SaaS", "Video streaming", "Chatbot"],
         category: "Mobile Development",
         featured: true,
@@ -123,7 +123,7 @@ export class MemStorage implements IStorage {
       {
         title: "Enterprise Data Analytics Platform",
         description: "Advanced analytics solution with real-time data processing and visualization capabilities.",
-        imageUrl: "/src/assets/Enterprise_Data_Analytics_Platform.jpg",
+        imageUrl: "/assets/Enterprise_Data_Analytics_Platform.jpg",
         technologies: ["React", "Python", "AWS", "PostgreSQL"],
         category: "Data Analytics",
         featured: true,
@@ -131,7 +131,7 @@ export class MemStorage implements IStorage {
       {
         title: "FinTech Mobile Application",
         description: "Secure mobile banking solution with biometric authentication and real-time transactions.",
-        imageUrl: "/src/assets/Fintech.jpg",
+        imageUrl: "/assets/Fintech.jpg",
         technologies: ["Flutter", "Node.js", "MongoDB", "Stripe"],
         category: "Mobile Development",
         featured: true,
@@ -139,7 +139,7 @@ export class MemStorage implements IStorage {
       {
         title: "Cloud Infrastructure Modernization",
         description: "Complete cloud migration and DevOps transformation for enhanced scalability and security.",
-        imageUrl: "/src/assets/Cloud.jpg",
+        imageUrl: "/assets/Cloud.jpg",
         technologies: ["AWS", "Docker", "Kubernetes", "Terraform"],
         category: "DevOps",
         featured: false,
@@ -147,7 +147,7 @@ export class MemStorage implements IStorage {
       {
         title: "AI-Powered Customer Support System",
         description: "Intelligent chatbot and ticket routing system using natural language processing.",
-        imageUrl: "/src/assets/AI-Powered_Customer_Support_System.jpg",
+        imageUrl: "/assets/AI-Powered_Customer_Support_System.jpg",
         technologies: ["Python", "TensorFlow", "FastAPI", "React"],
         category: "AI/ML",
         featured: true,
@@ -155,7 +155,7 @@ export class MemStorage implements IStorage {
       {
         title: "Healthcare Management System",
         description: "Comprehensive patient management system with secure data handling and compliance features.",
-        imageUrl: "/src/assets/Healthcare_Management_System.jpg",
+        imageUrl: "/assets/Healthcare_Management_System.jpg",
         technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
         category: "Healthcare",
         featured: false,
@@ -163,7 +163,7 @@ export class MemStorage implements IStorage {
       {
         title: "Travel Management Software That Automated 88% of Bookings",
         description: "MKrop has crafted a comprehensive mobile and web application to streamline the process of finding and reserving accommodations at ski resorts across the globe.",
-        imageUrl: "/src/assets/Booking.jpg",
+        imageUrl: "/assets/Booking.jpg",
         technologies: ["BPA", "ML", "HoReCa", "Mobile development", "Web", "Java", "Travel & hospitality"],
         category: "Mobile Development",
         featured: true,
@@ -171,7 +171,7 @@ export class MemStorage implements IStorage {
       {
         title: "3D Medical Imaging Software Development",
         description: "3D medical imaging software for reconstruction of bones, skin, and various organs from X-rays and CT scans implementing machine learning.",
-        imageUrl: "/src/assets/3DHealth.jpg",
+        imageUrl: "/assets/3DHealth.jpg",
         technologies: ["AWS", "Healthcare", "IoT", "Computer Vision", "Python", "Backend development"],
         category: "3D",
         featured: true,

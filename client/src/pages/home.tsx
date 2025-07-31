@@ -51,7 +51,7 @@ function VisionSection() {
           
           <div className="flex items-center justify-center space-x-6">
             <img
-              src="/src/assets/ceo.png"
+              src="/assets/ceo.png"
               alt="CEO headshot"
               className="w-16 h-16 rounded-full object-cover"
             />
