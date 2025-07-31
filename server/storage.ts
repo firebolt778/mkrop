@@ -134,7 +134,7 @@ export class MemStorage implements IStorage {
         imageUrl: "/assets/Fintech.jpg",
         technologies: ["Flutter", "Node.js", "MongoDB", "Stripe"],
         category: "Mobile Development",
-        featured: true,
+        featured: false,
       },
       {
         title: "Cloud Infrastructure Modernization",
@@ -150,7 +150,7 @@ export class MemStorage implements IStorage {
         imageUrl: "/assets/AI-Powered_Customer_Support_System.jpg",
         technologies: ["Python", "TensorFlow", "FastAPI", "React"],
         category: "AI/ML",
-        featured: true,
+        featured: false,
       },
       {
         title: "Healthcare Management System",
